@@ -24,6 +24,12 @@
          <module name="SuppressionXpathSingleFilter">
             <property name="message" value="Javadoc comment at column \d+ has parse error"/>
          </module>
+
+         <!-- show only non compact lines, hide lines longer than the limit -->
+         <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="JavadocUtilizingTrailingSpace"/>
+            <property name="message" value="Line is longer than \d+ characters"/>
+         </module>
     </module>
 
 </module>
